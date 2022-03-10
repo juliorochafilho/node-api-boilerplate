@@ -8,5 +8,6 @@
     "outDir": "dist"
   },
   "exclude": ["node_modules", "tests"],
+  "include": ["src/**/*"],
   "lib": ["es2015"]
 }

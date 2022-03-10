@@ -1,4 +1,4 @@
-module.exports =  {
+module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
   // The directory where Jest should output its coverage files
@@ -10,6 +10,8 @@ module.exports =  {
   // A preset that is used as a base for Jest's configuration
   preset: "ts-jest",
   testPathIgnorePatterns: [
-    "<rootDir>/dist", "<rootDir>/node_modules/"
-  ]
+    "<rootDir>/dist",
+    "<rootDir>/node_modules/",
+    "<rootDir>/coverage/",
+  ],
 };
