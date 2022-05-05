@@ -4,10 +4,10 @@
   "main": "dist/app.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "build": "npx webpack",
-    "dev": "nodemon",
-    "test": "jest --verbose --coverage"
+    "start": "node dist/app.js",
+    "postinstall": "tsc", 
+    "dev": " NODE_ENV=dev nodemon --transpile-only src/server.ts",
+    "test": "NODE_ENV=test jest --forceExit --verbose"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
