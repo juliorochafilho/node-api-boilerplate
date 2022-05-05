@@ -6,8 +6,8 @@
   "scripts": {
     "start": "tsc && node dist/app.js",
     "build": "npx webpack",
-    "dev": "nodemon",
-    "test": "jest --verbose --coverage"
+    "dev": "NODE_ENV=dev nodemon --transpile-only src/server.ts",
+    "test": "NODE_ENV=test jest --coverage --verbose"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
